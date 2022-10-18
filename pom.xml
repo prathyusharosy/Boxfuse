@@ -26,6 +26,23 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
    </properties>
+	
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>web-Releases Nexus Repository</name>
+	      <url>http://18.205.159.138:8081/repository/web-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>web-Snapshot Nexus Repository </name>
+	      <url>http://18.205.159.138:8081/repository/web-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+	
     <build>
         <plugins>
             <plugin>
